@@ -1,0 +1,52 @@
+@import '../../assets/style/utils/color.scss';
+.accordion_wrapper {
+  &:last-child {
+    border-bottom: none;
+  }
+  border-bottom: 1px solid lightgrey;
+  padding: 32px 0;
+}
+
+.question {
+  &:hover {
+    color: $sweet-desire;
+  }
+  background-color: $white;
+  font-size: 16px;
+  font-weight: 600;
+  color: $dark-purple;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.answer_text {
+  color: $grayish-purple;
+  line-height: 1.5;
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .question_text {
+    text-align: left;
+    font-size: 1.3em;
+  }
+
+  #buttonSvg {
+    width: auto;
+    height: 43px;
+  }
+
+  .answer_text {
+    font-size: 1.2em;
+  }
+}
+
