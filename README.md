@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5 markup
 - SCSS/SASS
 - Flexbox
 - Mobile-first workflow
