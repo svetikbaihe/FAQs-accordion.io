@@ -56,17 +56,15 @@ class Accordion {
   }
 
   buildAnswerWrapper = () => {
-    const $answerWrapper = document.createElement('div');
-
-    $answerWrapper.className = styles['answer_wrapper'];
-
     const $answerText = document.createElement('p');
+
     $answerText.className = styles['answer_text'];
+
+    $answerText.setAttribute('tabindex', '')
+
     $answerText.innerText = `${this.answer}`;
 
-    $answerWrapper.appendChild($answerText);
-
-    return $answerWrapper;
+    return $answerText;
   }
 
 }

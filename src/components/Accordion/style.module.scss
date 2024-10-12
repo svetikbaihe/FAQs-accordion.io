@@ -4,11 +4,11 @@
     border-bottom: none;
   }
   border-bottom: 1px solid lightgrey;
-  padding: 32px 0;
+  padding: 1.2rem 0;
 }
 
 .question {
-  &:hover {
+  &:hover, &:focus {
     color: $sweet-desire;
   }
   background-color: $white;
@@ -19,25 +19,27 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 1.3rem;
 }
 
 .answer_text {
   color: $grayish-purple;
   line-height: 1.5;
-  padding-top: 32px;
+  padding-top: 1.2rem;
 }
 
-@media screen and (max-width: 600px) {
+.question_text {
+  text-align: left;
+  font-size: 1.125em;
+}
+
+@media screen and (min-width: 600px) {
   .question {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    gap: 1.5rem;
   }
-  
+
   .question_text {
-    text-align: left;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   #buttonSvg {
@@ -46,7 +48,7 @@
   }
 
   .answer_text {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
